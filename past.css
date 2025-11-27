@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.past-wrap {
+}
+.past-wrap .section {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 60px 90px;
+    flex-wrap: wrap;
+}
+.past-wrap .section .text {
+    padding: 38px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.past-wrap .section .text .eng {
+    margin-bottom: 45px;
+    line-height: 1;
+    font-size: 80px;
+    font-weight: 700;
+    color: #5c6266;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.026em;
+}
+.past-wrap .section .text .tit {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 26px;
+    font-weight: 600;
+    color: #526266;
+}
+.past-wrap .section .text .txt {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5c6266;
+}
+.past-wrap .section .text .note {
+    margin-top: auto;
+}
+.past-wrap .section .text .note dl {
+    margin-top: 20px;
+}
+.past-wrap .section .text .note dt {
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 600;
+    color: #5c6266;
+}
+.past-wrap .section .text .note dd {
+    margin-top: 5px;
+    line-height: 1.5;
+    font-size: 11px;
+    font-weight: 400;
+    color: #5c6266;
+}
+.past-wrap .section .image {
+    position: relative;
+    width: 600px;
+    height: auto;
+    background: #ededed;
+    max-width: 100%;
+    aspect-ratio: 800 / 835;
+}
+.past-wrap .section .image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #b2e2a4;
+    opacity: 0.65;
+    transition: all 300ms;
+}
+.past-wrap .section .image:hover:before {
+    opacity: 0;
+}
+.past-wrap .section .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .past-wrap {
+    }
+    .past-wrap .section {
+        padding: 100px 30px 60px;
+    }
+    .past-wrap .section .text {
+        padding: 24px 0 0;
+        width: 100%;
+    }
+    .past-wrap .section .text .eng {
+        margin-bottom: 30px;
+        line-height: 1.2;
+        font-size: 60px;
+    }
+    .past-wrap .section .text .tit {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 22px;
+    }
+    .past-wrap .section .text .txt {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .past-wrap .section .text .note {
+        margin-top: auto;
+    }
+    .past-wrap .section .text .note dl {
+        margin-top: 20px;
+    }
+    .past-wrap .section .text .note dt {
+        line-height: 26px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #5c6266;
+    }
+    .past-wrap .section .text .note dd {
+        margin-top: 8px;
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #5c6266;
+    }
+    .past-wrap .section .image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 800/835;
+    }
+    .past-wrap .section .image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 767px) {
+    .past-wrap {
+    }
+    .past-wrap .section {
+        padding: 40px 20px;
+    }
+    .past-wrap .section .text {
+        padding: 24px 0 0;
+        width: 100%;
+    }
+    .past-wrap .section .text .eng {
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-size: 30px;
+    }
+    .past-wrap .section .text .tit {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .past-wrap .section .text .txt {
+        margin-bottom: 30px;
+        line-height: 1.5;
+        font-size: 14px;
+        font-weight: 300;
+        word-break: keep-all;
+        height: auto;
+    }
+    .past-wrap .section .text .txt br {
+        display: none;
+    }
+    .past-wrap .section .text .note {
+        margin-top: auto;
+    }
+    .past-wrap .section .text .note dl {
+        margin-top: 10px;
+    }
+    .past-wrap .section .text .note dt {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .past-wrap .section .text .note dd {
+        margin-top: 4px;
+        line-height: 16px;
+        font-size: 13px;
+    }
+    .past-wrap .section .image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 800/835;
+        min-width: auto;
+    }
+    .past-wrap .section .image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

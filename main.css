@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+* {
+    transition: all 600ms;
+}
+
+#header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 26px 60px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255 255 255 / 60%);
+    backdrop-filter: blur(8px);
+}
+#header .logo {
+    width: 226px;
+    display: flex;
+    align-items: center;
+}
+#header .logo a {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1784 / 227;
+    background: url(../img/mesideout.svg) no-repeat center / 100% auto;
+    text-indent: -9999em;
+}
+#header .gnb {
+}
+#header .gnb ul {
+    display: flex;
+    gap: 42px;
+}
+#header .gnb li {
+}
+#header .gnb li a {
+    display: block;
+    line-height: 42px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5c6266;
+}
+#header .gnb li a:hover {
+    color: #b2e2a4;
+}
+#header .gnb li.on a {
+    text-decoration: underline;
+}
+
+#container {
+    padding: 95px 0 0 0;
+}
+#container .visual {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    max-height: calc(100dvh - 142px);
+}
+#container .visual .image {
+    width: 100%;
+    height: 100%;
+}
+#container .visual .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#container .visual .text {
+    position: absolute;
+    bottom: 110px;
+    right: 60px;
+    text-align: right;
+}
+#container .visual .text .tit {
+    line-height: 1.5;
+    font-size: 100px;
+    font-weight: 700;
+    color: #5c6266;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.026em;
+}
+#container .visual .text .txt {
+    margin-top: 35px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5c6266;
+}
+
+#footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 165px 60px 50px;
+    background: #5c6266;
+}
+#footer .logo {
+    text-align: left;
+    width: 100%;
+}
+#footer .logo .text {
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+}
+#footer .logo .title {
+    display: block;
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1784 / 227;
+    background: url(../img/mesideout_wt.svg) no-repeat center / 100% auto;
+    text-indent: -9999em;
+}
+#footer .info {
+    text-align: right;
+}
+#footer .info .address {
+    white-space: nowrap;
+}
+#footer .info .address dt {
+    margin-bottom: 6px;
+    display: block;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+#footer .info .address dd {
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 200;
+    color: #fff;
+}
+#footer .info .copyright {
+    margin-top: 42px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.main-wrap {
+    padding: 26px 0 0;
+}
+.main-wrap .intro {
+    margin-bottom: 316px;
+    padding: 0 60px;
+    line-height: 1.3;
+    font-size: 56px;
+    font-weight: 500;
+    color: #5c6266;
+}
+.main-wrap .keyword {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-wrap .keyword .word {
+    display: flex;
+    align-items: center;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid #000;
+    gap: 300px;
+    width: 100%;
+}
+.main-wrap .keyword .word p {
+    flex: 0 0 auto;
+    line-height: 42px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #5c6266;
+}
+.main-wrap .keyword .word p:nth-child(1) {
+    flex: 1;
+}
+.main-wrap .keyword .site {
+    margin: 40px 0;
+    width: 100%;
+    aspect-ratio: 1784/227;
+    text-indent: -9999em;
+    background: url("../img/mesideout.svg") no-repeat center / 100% auto;
+}
+.main-wrap .background {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+.main-wrap .background .text {
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    right: 60px;
+}
+.main-wrap .background .text .eng {
+    margin-bottom: 25px;
+    line-height: 1.3;
+    font-size: 80px;
+    font-weight: 700;
+    color: #5c6266;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.026em;
+}
+.main-wrap .background .text .tit {
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5c6266;
+}
+.main-wrap .background .text .txt {
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5c6266;
+}
+.main-wrap .background .image {
+    width: 100%;
+    height: 100%;
+}
+.main-wrap .background .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    #header {
+        padding: 20px 30px;
+    }
+    #header .logo {
+        width: 160px;
+    }
+    #header .gnb ul {
+        gap: 30px;
+    }
+    #header .gnb li a {
+        font-size: 20px;
+    }
+
+    #footer {
+        padding: 60px 40px;
+    }
+    #footer .logo .text {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    #footer .logo .title {
+        width: 400px;
+    }
+    #footer .info .address {
+    }
+    #footer .info .address dt {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #footer .info .address dd {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #footer .info .copyright {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+
+    #container {
+        padding: 82px 0 0 0;
+    }
+    #container .visual {
+        height: 100dvh;
+        max-height: 624px;
+    }
+    #container .visual .text {
+        right: 30px;
+        bottom: 60px;
+    }
+    #container .visual .text .tit {
+        line-height: 1.5;
+        font-size: 80px;
+    }
+    #container .visual .text .txt {
+        margin-top: 25px;
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;
+        color: #5c6266;
+    }
+
+    .main-wrap .intro {
+        margin-bottom: 240px;
+        padding: 0 30px;
+    }
+    .main-wrap .keyword {
+        padding: 0 30px;
+    }
+    .main-wrap .keyword .word {
+        padding: 0 0 20px 0;
+        gap: 140px;
+    }
+    .main-wrap .keyword .word p {
+        font-size: 24px;
+    }
+    .main-wrap .keyword .site {
+    }
+    .main-wrap .background {
+        height: 100dvh;
+        max-height: 1023px;
+    }
+    .main-wrap .background .text {
+        left: 30px;
+        right: 30px;
+        top: 140px;
+    }
+    .main-wrap .background .text .eng {
+        font-size: 60px;
+    }
+    .main-wrap .background .text .tit {
+        font-size: 30px;
+    }
+    .main-wrap .background .text .txt {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    #header {
+        padding: 20px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #header .logo {
+        width: 140px;
+    }
+    #header .gnb {
+        width: 100%;
+    }
+    #header .gnb ul {
+        gap: 20px;
+        justify-content: space-between;
+        overflow-x: auto;
+    }
+    #header .gnb li a {
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    #footer {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #footer .logo .text {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    #footer .logo .title {
+        width: 100%;
+    }
+    #footer .info .address {
+    }
+    #footer .info .address dt {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    #footer .info .address dd {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    #footer .info .copyright {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    #container {
+        padding: 114px 0 0 0;
+    }
+    #container .visual {
+        height: 100dvh;
+        max-height: 400px;
+    }
+    #container .visual .text {
+        left: 20px;
+        right: 20px;
+        bottom: 40px;
+    }
+    #container .visual .text .tit {
+        line-height: 1;
+        font-size: 46px;
+    }
+    #container .visual .text .txt {
+        margin-top: 15px;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    #container .visual .text .txt br {
+        display: none;
+    }
+
+    .main-wrap .intro {
+        margin-bottom: 120px;
+        padding: 0 20px;
+        line-height: 1.2;
+        font-size: 25px;
+    }
+    .main-wrap .keyword {
+        padding: 0 30px;
+    }
+    .main-wrap .keyword .word {
+        padding: 0 0 20px 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-wrap .keyword .word p {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .main-wrap .keyword .site {
+        margin: 20px 0 30px;
+    }
+    .main-wrap .background {
+        height: 100dvh;
+        max-height: 600px;
+    }
+    .main-wrap .background .text {
+        left: 20px;
+        right: 20px;
+        top: 100px;
+    }
+    .main-wrap .background .text .eng {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .main-wrap .background .text .tit {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .main-wrap .background .text .txt {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .main-wrap .background .text .txt br {
+        display: none;
+    }
+}
