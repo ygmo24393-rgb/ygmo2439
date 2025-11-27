@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.inner-wrap {
+}
+.inner-wrap .section {
+    padding: 300px 0 120px 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inner-wrap .section .text {
+    display: flex;
+    border-bottom: 3px solid #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 40px;
+}
+.inner-wrap .section .text .tit {
+    line-height: 1.5;
+    font-size: 70px;
+    font-weight: 600;
+    color: #5c6266;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.026em;
+}
+.inner-wrap .section .text .txt {
+    width: 660px;
+    max-width: 100%;
+    padding: 0 50px 0 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+    color: #5c6266;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .inner-wrap {
+    }
+    .inner-wrap .section {
+        padding: 100px 0 40px 60px;
+    }
+    .inner-wrap .section .text {
+        padding: 20px 0 0;
+    }
+    .inner-wrap .section .text .tit {
+        line-height: 1.2;
+        font-size: 50px;
+        width: 270px;
+        flex: 0 0 auto;
+    }
+    .inner-wrap .section .text .txt {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px 0 0;
+        line-height: 1.4;
+        font-size: 14px;
+        word-break: keep-all;
+    }
+    .inner-wrap .section .text .txt br {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .inner-wrap {
+    }
+    .inner-wrap .section {
+        padding: 60px 20px;
+    }
+    .inner-wrap .section .text {
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .inner-wrap .section .text .tit {
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .inner-wrap .section .text .txt {
+        padding: 0;
+        line-height: 1.4;
+        font-size: 14px;
+        width: 100%;
+        word-break: keep-all;
+    }
+    .inner-wrap .section .text .txt br {
+        display: none;
+    }
+}
